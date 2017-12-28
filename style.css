@@ -1,0 +1,63 @@
+#outer
+{
+    background: #80DEEA;
+    width: 500px;
+    height: 500px;
+    border: none;
+    box-shadow: 5px 10px 10px #E0E0E0;
+    margin-left: 30%;
+    position: relative;
+}
+#heading
+{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 25%;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+#name
+{
+    width: 450px;
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 100px;
+}
+#email
+{
+    width: 450px;
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+#num
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top:20px;
+    
+}
+#submit
+{
+    margin-left: 200px;
+    border: none;
+    background: #FF8A65; 
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+}
+
