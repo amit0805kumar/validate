@@ -1,6 +1,6 @@
 #outer
 {
-    background: #80DEEA;
+    background:#00897B;
     width: 500px;
     height: 500px;
     border: none;
@@ -21,7 +21,7 @@
 }
 #loginid
 {
-    width: 450px;
+   
     height: 30px;
     border: none;
     margin-left: 20px;
@@ -31,7 +31,7 @@
 }
 #email
 {
-    width: 450px;
+
     height: 30px;
     border: none;
     margin-left: 20px;
@@ -45,13 +45,13 @@
     height: 30px;
     border: none;
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: sans-serif;
     margin-top: 20px;
 }
 #password,#cpassword
 {
-    width: 300px;
+    
     height: 30px;
     border: none;
     margin-left: 20px;
@@ -70,4 +70,15 @@
     height: 30px;
     margin-top: 20px;
 }
-
+#sizelogin,#sizeemail,#sizepass
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+#sizecpass
+{
+    color: white;
+        font-size: 20px;
+    margin-left: 20px;
+}
