@@ -30,19 +30,23 @@ function matchpass(source,target)
 {
     curr = document.getElementById(source).value;
     conf = document.getElementById(target).value;
+    ret=false;
     if(curr == conf)
         {
             document.getElementById(target).style.background='#ccff90';
+            ret=true;
         }
     else{
             document.getElementById(target).style.background='#ff8a80';
     }
+    return ret;
 }
 function EmailVal(source,target)
 {
     curr = document.getElementById(source).value;
     atcheck=0;
     dotcheck=0;
+    ret=false;
     if(curr.indexOf("@")!=-1)
         {
             if(curr.indexOf("@")==curr.lastIndexOf("@"))
@@ -62,6 +66,7 @@ function EmailVal(source,target)
             document.getElementById(target).innerHTML="Valid";
             document.getElementById(source).style.background='#ccff90';
              document.getElementById(target).style.color= '#64dd17';
+            ret=true;
         }
     else
         {
@@ -69,16 +74,37 @@ function EmailVal(source,target)
             document.getElementById(source).style.background='#ff8a80';
              document.getElementById(target).style.color= '#d50000';
         }
+    return ret;
 }
 function ValidLength(source)
 {
     curr = document.getElementById(source).value;
+    ret=false;
     if(curr.length==0)
         {
             document.getElementById(source).style.background='#ff8a80';
+            
         }
     else
         {
-                document.getElementById(source).style.background='white';    
+                document.getElementById(source).style.background='white'; 
+            ret=true;
+        }
+    return ret;
+}
+function finalcheckup()
+{
+    t1=ValidLength('password');
+    t2=ValidLength('loginid');
+    t3=EmailVal('email','emailval');
+    t4=matchpass('password','cpassword');
+    t5=ValidLength('email');
+  if( t1 && t2 && t3 && t4 && t5)
+        {
+            return true;
+        }
+    else
+        {
+            return false;
         }
 }

@@ -1,14 +1,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-     <script src="scrit.js"></script>
+     <script src="script.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Concert+One|Fredoka+One|Permanent+Marker|Righteous" rel="stylesheet">
+   
 </head>
 <body>
 <div id="outer">
     <h1 id="heading">Validation Form</h1>
     <!--INPUTS-->
-    <form method="post" action="index.php">
+    <form method="post" action="blah.php" onsubmit="return finalcheckup();">
     
         <input type="text" id="loginid" placeholder="LOGIN" onkeyup="UpdateLength('loginid','sizelogin');ValidLength('loginid');"  maxlength="25" name="login" ><br/>
         <div id="sizelogin"></div>
