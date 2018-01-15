@@ -3,6 +3,11 @@
             font-family:OrbitronBlack;
             src:url(fonts/Orbitron-Black.ttf);
         }
+@font-face
+    {
+            font-family:FredokaOneRegular;
+            src:url(fonts/FredokaOne-Regular.ttf);
+        }
 *
 {
     font-family: sans-serif;
@@ -59,6 +64,10 @@
     font-family: sans-serif;
     margin-top: 20px;
 }
+.gender:hover
+{
+    cursor: pointer;
+}
 #password,#cpassword
 {
     
@@ -90,6 +99,7 @@
 {
     background: white;
     color: #ec407a;
+    cursor: pointer;
 }
 #sizelogin,#sizeemail,#sizepass
 {
@@ -102,4 +112,11 @@
     color: white;
         font-size: 20px;
     margin-left: 20px;
+}
+#passst,#emailval
+{
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    font-family: FredokaOneRegular;
 }
