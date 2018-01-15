@@ -70,3 +70,15 @@ function EmailVal(source,target)
              document.getElementById(target).style.color= '#d50000';
         }
 }
+function ValidLength(source)
+{
+    curr = document.getElementById(source).value;
+    if(curr.length==0)
+        {
+            document.getElementById(source).style.background='#ff8a80';
+        }
+    else
+        {
+                document.getElementById(source).style.background='white';    
+        }
+}
