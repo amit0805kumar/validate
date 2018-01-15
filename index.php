@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-     <script src="script.js"></script>
+     <script src="scrit.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Concert+One|Fredoka+One|Permanent+Marker|Righteous" rel="stylesheet">
 </head>
 <body>
@@ -10,9 +10,9 @@
     <!--INPUTS-->
     <form method="post" action="index.php">
     
-        <input type="text" id="loginid" placeholder="LOGIN" onkeyup="UpdateLength('loginid','sizelogin')"  maxlength="25" name="login" ><br/>
+        <input type="text" id="loginid" placeholder="LOGIN" onkeyup="UpdateLength('loginid','sizelogin');ValidLength('loginid');"  maxlength="25" name="login" ><br/>
         <div id="sizelogin"></div>
-        <input type="password" id="password" name="pass" placeholder="PASSWORD"  onkeyup="UpdateLength('password','sizepass');PasswordStrength('password','passst');" maxlength="20"> &nbsp; <div id="passst"></div><br>
+        <input type="password" id="password" name="pass" placeholder="PASSWORD"  onkeyup="UpdateLength('password','sizepass');PasswordStrength('password','passst');ValidLength('password');" maxlength="20"> &nbsp; <div id="passst"></div><br>
         <div id="sizepass"></div>
         
         <input type="password" id="cpassword" name="cpass" placeholder="CONFIRM PASSWORD"  onkeyup="UpdateLength('cpassword','sizecpass');matchpass('password','cpassword');" maxlength="20"><br>
@@ -24,7 +24,7 @@
             <option class="gender" value="T">TRANS</option>
             
         </select><br><br>
-        <input type="text" id="email" placeholder="E-MAIL" name="email"  onkeyup="UpdateLength('email','sizeemail');EmailVal('email','emailval')" maxlength="25"> &nbsp; <div id="emailval"></div><br>
+        <input type="text" id="email" placeholder="E-MAIL" name="email"  onkeyup="UpdateLength('email','sizeemail');EmailVal('email','emailval');ValidLength('email');" maxlength="25"> &nbsp; <div id="emailval"></div><br>
         <div id="sizeemail"></div>
         
         <input type="submit" id="submit" value="SUBMIT"><br><br>
