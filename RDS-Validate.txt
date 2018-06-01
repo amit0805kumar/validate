@@ -1,0 +1,3 @@
+testformdb1
+testdatabase
+mysql -h validate.cofnjkbm4im7.us-east-2.rds.amazonaws.com -u testformdb1 -p
