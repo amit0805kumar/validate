@@ -1,14 +1,26 @@
 
 <?php
+
+//Everything works
     $database="validate";
-    $password="";
-    $servername="localhost";
-    $username="root";
+    $password="****";
+    $servername="****";
+    $username="*";
     $conn = new mysqli($servername,$username,$password,$database);
+   // $conn = new mysqli("host", "username", "*****", "dtaabase", "3306");
+//$conn = mysqli_connect("host", "username", "*****");
+ // mysqli_select_db($conn,"dtaabase"); 
+//if (!$conn) {
+  //  die("Connection failed: " . mysqli_connect_error());
+//}
+
+
+
     if($conn->connect_error)
     {
     die("Connect failes: ".$conn->connect_error);
     }
+    
 echo
     
 '<html>
@@ -68,7 +80,9 @@ margin-left:420px;
     </head><body>
     <div id="header">
         ';
-        if(!empty($_POST["login"]) && !empty($_POST["pass"]) && !empty($_POST["gender"]) && !empty($_POST["email"]))
+
+    
+ if(!empty($_POST["login"]) && !empty($_POST["pass"]) && !empty($_POST["gender"]) && !empty($_POST["email"]))
         {
 $login=$_POST["login"];
 $pass=$_POST["pass"];
@@ -76,6 +90,7 @@ $email=$_POST["email"];
 $gen=$_POST["gender"];
 $sql="insert into inputs value ('$login','$pass','$gen','$email')";
 $conn->query($sql);
+//mysqli_query($conn,$sql);
 echo    '<p id="text"><a style="background:#00DED1;">DATA</a> INSERTED</p>';
             
         }
